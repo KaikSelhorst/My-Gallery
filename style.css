@@ -1,0 +1,121 @@
+:root {
+  --gray-1:#4E5150;
+  --gray-2:#A9A9A9;
+  --gray-3:#E5E5E5;
+  --gray-4:#BDBDBD;
+  --gray-5:#B9BDCF;
+  font-size: 10px;
+}
+* {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+.conteiner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.conteiner-profile {
+  margin-top: 60px;
+  padding: 19px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conteiner-profile .conteiner-img {
+  max-width: 156px;
+}
+.conteiner-profile .conteiner-img img{
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+}
+.conteiner-profile h1 {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--gray-1);
+}
+.conteiner-profile h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--gray-2);
+  margin-top: 4px;
+  line-height: 1.7rem;
+}
+
+.conteiner-status{
+  width: 400px;
+  margin-top: 10px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.conteiner-status > div {
+  flex: 1;
+  display: flex;
+  height: 67px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  background: var(--gray-3);
+}
+.conteiner-status div span:nth-of-type(1) {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: var(--gray-1);
+  font-weight: 600;
+}
+.conteiner-status div span:nth-of-type(2) {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color:var(--gray-4);
+  font-weight: 600;
+}
+.main {
+  max-width:950px ;
+  margin:0 auto;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3,minmax(100px,1fr));
+  grid-template-rows: repeat(3,minmax(1fr,300px));
+}
+.main div {
+  display:flex;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+.spanTwoColumn {
+  grid-column: span 2;
+}
+.spanTwoRow {
+  grid-row: span 2;
+}
+
+.footer {
+  color: var(--gray-5);
+  line-height: 1.7rem;
+  text-align: center;
+  max-width: 1440px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 30px auto 0;
+  padding: 10px;
+}
+.footer strong {
+  font-weight: 700;
+}
